@@ -1,0 +1,87 @@
+<link rel="stylesheet" type="text/css" href="index.css">
+script type="text/javascript" src="index.js"></script>
+<header class="header">
+  <figure>
+    <img src="http://www.comicsbeat.com/wp-content/uploads/2017/01/thanos-infinity.jpg" alt="Logo" />
+  </figure>
+</header>
+<body>
+  <h1 id = "title">SPOILERS AHEAD</h1>
+  <p id="description"> Did you Survive?</p>
+  
+    <form id="survey-form" onsubmit="return validate()">
+      <fieldset>
+        <div id="form-outer">
+    <form  id="survey-form">
+      <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+      <br>
+      <div>
+      <div class="label">
+        <label>What Group Are You Associated With</label><br>
+        <select id="dropdown">
+          </div>
+          <option value>Select a Option</option>
+          <option value="Evil">Black Order</option>
+          <option value ="Earths Mighties Heros">Avengers</option>
+          <option value="GOTG">Guardians of the Galaxy</option>
+          <option value="half">Half of the Universe</option>
+        </select>
+      </div>
+      <br>
+      <div >
+        <label>Are You Good Or Evil?</label><br>
+        <input type="radio" id="radio1" class="radio" name="radio" value="good">
+        <label for="radio1" id="radio-option1" class="radio-label">Good</label>
+        <input type="radio" id="radio2" class="radio" name="radio" value="evil">
+        <label for="radio2" id="radio-option2" class="radio-label">Evil</label>
+      </div>
+      <br>
+      <div class="labels">
+        <label>Should Half The Universe Should Die?</label><br>
+      </div>
+        <div class="rightTab">
+         <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Yes</label></li>
+          <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">No</label></li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Maybe</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">I Dont Care</label></li>
+          
+        </ul>
+      </div>
+      <div class="labels">
+        <label for="textarea" id="textarea-label" class="bold">Comments:</label></div>
+      <div class="rightTab"><textarea id="textarea" rows="10" cols="20" placeholder="Comments, questions, concerns..."></textarea>
+      </div>
+      <br><br>
+      <div class="submit">
+        <button id="submit" type="submit">Submit</button></div>
+    </form>
+    </div>
+     <fieldset>
+    </form>
+ 
+</body>
+
